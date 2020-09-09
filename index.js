@@ -8,6 +8,7 @@ require("./models/User");
 require("./models/Survey");
 require("./services/passport");
 
+mongoose.set("debug", true);
 mongoose.connect(keys.mongoURI, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
